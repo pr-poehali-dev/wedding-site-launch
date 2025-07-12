@@ -53,7 +53,7 @@ const Index = () => {
             />
           </div>
           <h1 className="text-6xl md:text-8xl font-['Playfair_Display'] font-bold text-gray-800 mb-6 animate-fade-in">
-            Анна <span className="text-pink-500">&</span> Михаил
+            Азалия <span className="text-pink-500">&</span> Даниил
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in">
             Приглашаем вас разделить с нами этот особенный день
