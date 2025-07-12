@@ -8,6 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/ui/icon";
+import { TextRotate } from "@/components/ui/text-rotate";
 
 const Index = () => {
   const timelineEvents = [
@@ -55,9 +56,21 @@ const Index = () => {
           <h1 className="text-6xl md:text-8xl font-['Playfair_Display'] font-bold text-gray-800 mb-6 animate-fade-in">
             Азалия <span className="text-pink-500">&</span> Даниил
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in">
-            Приглашаем вас разделить с нами этот особенный день
-          </p>
+          <div className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in">
+            <TextRotate
+              texts={[
+                "Приглашаем вас разделить с нами этот особенный день",
+                "Будет весело! 💫",
+                "Ждём вас на нашем празднике",
+                "Вместе мы создадим волшебство ✨"
+              ]}
+              rotationInterval={3000}
+              staggerDuration={0.03}
+              staggerFrom="first"
+              splitBy="characters"
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+            />
+          </div>
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-pink-100 animate-scale-in">
             <div className="flex items-center justify-center gap-4 mb-4">
               <Icon name="Calendar" size={32} className="text-pink-500" />
